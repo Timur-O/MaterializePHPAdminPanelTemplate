@@ -11,7 +11,7 @@ A template for an admin panel built with PHP and Materialize. The template comes
 ## Getting Started
 ---
 ### 1. Install the dependencies
-1. Run `composer install` once in the directory of the template
+1. If you downloaded the release you can skip this step, otherwise run `composer install` once in the directory of the template
 
 ### 2. Get Google Analytics Credentials
 In order for the template to work, a file needs to be present in the root of the template files. This file is called `client_secrects.json`. This file can be found by doing the following:
