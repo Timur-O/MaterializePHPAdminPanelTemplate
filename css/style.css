@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  padding-left: 300px;
+  background-color: #f1f1f13d;
+  margin: 0 !important;
+  flex: 1 0 auto;
+}
+
+.loginmain {
+  background-color: #f1f1f13d;
+  margin: 0 !important;
+  flex: 1 0 auto;
+}
+
+.loginbox {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.sectionTitle {
+  margin-left: 2%; 
+}
+
+.feed-item-title {
+  font-size: 1.25rem !important;
+}
+
+.feed-title {
+  font-size: 1.3rem !important;
+}
+
+.rssHeight {
+  height: 473px;
+  overflow-y: scroll;
+}
+
+footer {
+  padding-left: 300px;
+  background-color: #f1f1f13d;
+}
+
+.rowtoppadded2 {
+  padding-top: 2%;
+}
+
+.rowtoppadded10 {
+  padding-top: 10%;
+}
+
+.rowbottompadded {
+  padding-bottom: 2% !important;
+}
+
+.paginator {
+  border-bottom: 0;
+}
+
+.padright {
+  padding-right: 2%;
+}
+
+.borderedbox {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.sidenav-trigger {
+  display: none;
+}
+
+.sidenav-trigger > i {
+  font-size: 3rem;
+}
+
+.card-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 2%;
+}
+
+.respon-table {
+  overflow-x:auto;
+}
+
+#monitor_table {
+  font-size: 1.2rem;
+}
+
+.analyticsRangeButton {
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 993px) {
+  .main {
+    padding-left: 0px;
+  }
+  .sidenav-trigger {
+    display: block;
+  }
+  footer {
+    padding-left: 0px;
+  }
+  .rowtoppadded {
+    padding-top: 0%;
+  }
+  #overalluptimeheader {
+    margin-top: 0 !important;
+  }
+}
