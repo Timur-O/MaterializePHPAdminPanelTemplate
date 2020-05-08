@@ -12,7 +12,7 @@ A template for an admin panel built with PHP and Materialize. The template comes
 ---
 ### 1. Install the dependencies
 1. If you downloaded the release you can skip this step, otherwise run `composer install` once in the root directory of the template
-2. To decrease amount of files in dependency go to vendor/google/apiclient-services/src/Google/Service and delete all files except: the Analytics and AnalyticsReporting folders and the Analytics.php and AnalyticsReporting.php files. This will decrease the amount of files from ~12,000 to ~600.
+2. To decrease amount of files in dependency go to `vendor/google/apiclient-services/src/Google/Service` and delete all files except: the Analytics and AnalyticsReporting folders and the Analytics.php and AnalyticsReporting.php files. This will decrease the amount of files from ~12,000 to ~600.
 
 ### 2. Get Google Analytics Credentials
 In order for the template to work, a file needs to be present in the root of the template files. This file is called `client_secrects.json`. This file can be found by doing the following:
