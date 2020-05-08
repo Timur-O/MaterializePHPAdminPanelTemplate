@@ -36,11 +36,10 @@ In order to access status updates from uptime robot an API Key is needed. This c
 2. Under view click on view settings and at the top it should say view id
 3. Copy this number and in the config.php file past it where it says `$analyticsViewID` in the second quotation marks after the `ga:`. If you get an error make sure `$analyticsViewID` is equal to `ga:YOURID`
 
-### 5. Fill out the other values in the config.php file
+### 5. Connect to your database
+1. Add your database details in the config.php file
+
+### 6. Fill out the other values in the config.php file
 1. Add your twitter handle - if you don't want to show a twitter feed, go to the index.php file and delete the div with the class twitterFeed.
 2. Add a link to an RSS feed you want to show- if you don't want to show a RSS feed, go to the index.php file and delete the div with the class rssFeed.
 3. Change the `$rootOfFiles` variable depending on the location of the admin panel files. If in the root of a domain - eg. htdocs folder, then simply leave the variable as an empty string. Otherwise add the a forward slash and the folder name - eg. if the files are in the admin folder then the variable should be `/admin`.
-
-### 6. Add the PHP to connect the admin panel to your database
-1. The login.php and logout.php pages need to connect the the database
-2. Each page needs a check at the beginning to see if the user is logged in or not
