@@ -2,6 +2,8 @@
 ---
 A template for an admin panel built with PHP and Materialize. The template comes with Google Analytics and Uptime Robot APIs built in, but still requires a database connection for the login system and user management system.
 
+Screenshot Link: [https://imgur.com/a/h6vKnkc](https://imgur.com/a/h6vKnkc)
+
 ## Features
 ---
 - Google Analytics API for Analytics
