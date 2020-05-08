@@ -2,7 +2,11 @@
 $(document).ready(function(){
   $('.sidenav').sidenav();
 
-  var currPage = document.location.pathname.match(/[^\/]+$/)[0];
+  if (document.location.pathname != '/') {
+    var currPage = document.location.pathname.match(/[^\/]+$/)[0];
+  } else {
+    $('footer').attr('class', 'footerlogin');
+  }
 
   switch (currPage) {
     case 'index':
@@ -21,6 +25,10 @@ $(document).ready(function(){
     case 'analytics.php':
       countryChart();
       deviceChart();
+      break;
+    case 'index':
+    case 'index.php':
+      $('footer').attr('class', 'footerlogin');
       break;
   }
 });

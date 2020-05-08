@@ -44,6 +44,10 @@ footer {
   background-color: #f1f1f13d;
 }
 
+.footerlogin {
+  padding-left: 0px !important;
+}
+
 .rowtoppadded2 {
   padding-top: 2%;
 }

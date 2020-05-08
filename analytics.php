@@ -95,7 +95,8 @@ $client->setIncludeGrantedScopes(true);
           printResultsLandingD($responseLandingD);
           printResultsCategoryD($responseCategoryD);
         } else {
-          $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . '/admin/oauth2callback.php';
+          global $rootOfFiles;
+          $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . $rootOfFiles . '/oauth2callback.php';
           header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
         }
 

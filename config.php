@@ -9,6 +9,9 @@
   $analyticsViewID = "ga:" . "YOURANALYTICSVIEWID";
   // RSS Feed Link for Dashboard
   $rssFeed = "YOURRSSLINK";
+  // Root of the admin panel files
+  // if in a folder called admin simply put "/admin". if not in a folder then simply put "".
+  $rootOfFiles = "";
 
   // ADD client_secrets.json file for google api access
   // CHANGE ICON BY UPLOADING favicon.png INTO THE IMAGES FOLDER
