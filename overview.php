@@ -4,6 +4,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 session_start();
 
+include 'loginCheck.php';
+
 $client = new Google_Client();
 $client->setAuthConfig(__DIR__ . '/client_secrets.json');
 $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
@@ -93,6 +95,13 @@ $client->setIncludeGrantedScopes(true);
             }
           }
         }
+        
+        include 'config.php';
+        
+        $sql = "SELECT COUNT(*) as 'num' FROM `{$clientTableName}`";
+        $result = $conn->query($sql)->fetch_assoc();
+        $numberOfClients = $result['num'];
+        
       ?>
 
       <div class="row rowtoppadded2">
@@ -100,7 +109,7 @@ $client->setIncludeGrantedScopes(true);
           <div class="card">
             <div class="card-content">
               <span class="card-title">Total Users</span>
-              <h5>10,000</h5><p>Registered Users</p> <!-- Should be done with database -->
+              <h5><?php echo $numberOfClients; ?></h5><p>Registered Users</p> <!-- Should be done with database -->
             </div>
           </div>
         </div>

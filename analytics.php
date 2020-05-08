@@ -4,6 +4,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 session_start();
 
+include 'loginCheck.php';
+
 $client = new Google_Client();
 $client->setAuthConfig(__DIR__ . '/client_secrets.json');
 $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);

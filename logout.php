@@ -1,5 +1,6 @@
 <?php
-  // Set this up depending on your login system
-  // Clear Session & Cookies
-  // Redirect to login.php
+  session_start();
+  session_destroy();
+  //Redirect
+  header("Location: index.php"); die();
 ?>

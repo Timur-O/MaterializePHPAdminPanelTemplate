@@ -103,6 +103,10 @@ footer {
   margin-bottom: 1%;
 }
 
+.moreAccountsInfoRow {
+  display: none;
+}
+
 @media only screen and (max-width: 993px) {
   .main {
     padding-left: 0px;

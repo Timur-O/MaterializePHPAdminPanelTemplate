@@ -9,8 +9,8 @@ $(document).ready(function(){
   }
 
   switch (currPage) {
-    case 'index':
-    case 'index.php':
+    case 'overview':
+    case 'overview.php':
       $(function(){
         updateUptimeCard();
       });
