@@ -12,6 +12,7 @@ A template for an admin panel built with PHP and Materialize. The template comes
 ---
 ### 1. Install the dependencies
 1. If you downloaded the release you can skip this step, otherwise run `composer install` once in the root directory of the template
+2. To decrease amount of files in dependency go to vendor/google/apiclient-services/src/Google/Service and delete all files except: the Analytics and AnalyticsReporting folders and the Analytics.php and AnalyticsReporting.php files. This will decrease the amount of files from ~12,000 to ~600.
 
 ### 2. Get Google Analytics Credentials
 In order for the template to work, a file needs to be present in the root of the template files. This file is called `client_secrects.json`. This file can be found by doing the following:
@@ -38,6 +39,7 @@ In order to access status updates from uptime robot an API Key is needed. This c
 ### 5. Fill out the other values in the config.php file
 1. Add your twitter handle - if you don't want to show a twitter feed, go to the index.php file and delete the div with the class twitterFeed.
 2. Add a link to an RSS feed you want to show- if you don't want to show a RSS feed, go to the index.php file and delete the div with the class rssFeed.
+3. Change the `$rootOfFiles` variable depending on the location of the admin panel files. If in the root of a domain - eg. htdocs folder, then simply leave the variable as an empty string. Otherwise add the a forward slash and the folder name - eg. if the files are in the admin folder then the variable should be `/admin`.
 
 ### 6. Add the PHP to connect the admin panel to your database
 1. The login.php and logout.php pages need to connect the the database
