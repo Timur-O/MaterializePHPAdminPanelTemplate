@@ -22,7 +22,7 @@
   $clientTableName = "yourtable"; // Name of table containing client login info
   $emailColumn = "email"; // Name of column containing emails
   $hashPasswordColumn = "password"; // Name of column containing passwords
-  $primaryKeyColumn = "id" // Name of column containing the primary key/unique identifier for each row
+  $primaryKeyColumn = "id"; // Name of column containing the primary key/unique identifier for each row
   
   $conn = new mysqli($servername, $username, $password, $dbname);
   

@@ -4,8 +4,8 @@ include 'config.php';
 if (isset($_SESSION['adminUser'])) {
   $adminUser = $_SESSION['adminUser'];
   $sql = "SELECT `{$emailColumn}` FROM `{$adminTableName}` WHERE `{$primaryKeyColumn}` = '{$adminUser}'";
-  $result = $conn->query($sql)->fetch_assoc();
-  if ($result->num_rows == 1) {
+  $result = $conn->query($sql);
+  if ($result->num_rows === 1) {
     //Redirect to overview
     header("Location: overview.php"); die();
   }
@@ -24,6 +24,8 @@ if (isset($_SESSION['adminUser'])) {
           <h5>Login</h5>
           
           <?php
+            $passwordError = $emailError = "";
+            
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 include 'config.php';
 
