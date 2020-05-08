@@ -38,6 +38,7 @@ In order to access status updates from uptime robot an API Key is needed. This c
 
 ### 5. Connect to your database
 1. Add your database details in the config.php file
+2. Make sure the password hashes in the database are generated with `password_hash()` with PHP
 
 ### 6. Fill out the other values in the config.php file
 1. Add your twitter handle - if you don't want to show a twitter feed, go to the index.php file and delete the div with the class twitterFeed.
